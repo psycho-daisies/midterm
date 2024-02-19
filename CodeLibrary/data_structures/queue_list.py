@@ -71,14 +71,14 @@ class DoublyLinkedListQueue:
         return dequeued_data
 
 
-# Testing out the list and different functions
-test_list = DoublyLinkedListQueue()
-test_list.enqueue(5)
-test_list.enqueue(6)
-test_list.enqueue(7)
-num = test_list.dequeue()
+# # Testing out the list and different functions
+# test_list = DoublyLinkedListQueue()
+# test_list.enqueue(5)
+# test_list.enqueue(6)
+# test_list.enqueue(7)
+# num = test_list.dequeue()
 
-print(num)
-num = test_list.dequeue()
+# print(num)
+# num = test_list.dequeue()
 
 
