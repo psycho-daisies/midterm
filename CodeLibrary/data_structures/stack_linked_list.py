@@ -1,5 +1,5 @@
 """
-Midterm Library: Stack / Linked List
+Stack / Linked List
 Troy Brunette
 CS240
 
@@ -30,7 +30,7 @@ class Stack:
         self.max_size = max_size
 
     # Push adds an item to the top of the Stack; except if the Stack is full
-    def Push(self, data):
+    def push(self, data):
         if self.size == self.max_size:
             return print(f"Can't add {data} to a full stack! ")
 
@@ -44,7 +44,7 @@ class Stack:
             self.head.next = node.next
 
     # Pop removes from the top of the stack; the first node of the list
-    def Pop(self):
+    def pop(self):
         if self.head is None:
             return print("Can't Pop! ~ Stack is Empty!")
         self.size = self.size - 1
@@ -53,15 +53,15 @@ class Stack:
         return popped.data
 
     # Returns True if the Stack is empty
-    def IsEmpty(self):
+    def is_empty(self):
         return self.head is None
 
     # Returns True if the Stack is full by checking size of Linked List to max Stack size
-    def IsFull(self):
+    def is_full(self):
         return self.max_size == self.size
 
     # Peek looks at the top of Stack but does not Pop
-    def Peek(self):
+    def peek(self):
         if self.head is None:
             return print("Can't Peek! ~ Stack is Empty")
         return self.head.data
@@ -84,25 +84,25 @@ class Stack:
         return int(counter)
 
 
-# Testing the Stack functions
-test_stack = Stack(5)
-print(test_stack.IsEmpty())
-print(f"Current size of Stack: ", test_stack.get_size())
-test_stack.Push(1)
-test_stack.Push(2)
-test_stack.Push(3)
-test_stack.Push(4)
-print(f"Is the Stack full? ", test_stack.IsFull())
-test_stack.Push(5)
-test_stack.Push(6)
-print(f"Current size of Stack: ", test_stack.get_size())
-print(f"Is the Stack Empty? ", test_stack.IsEmpty())
-print(f"Is the Stack full? ", test_stack.IsFull())
-print("Take a PEEK at the top of the stack:", test_stack.Peek())
-print("Popped item: ", test_stack.Pop())
-print("Take a PEEK at the top of the stack:", test_stack.Peek())
-print("Popped item: ", test_stack.Pop())
-print("Take a PEEK at the top of the stack:", test_stack.Peek())
-print("Popped item: ", test_stack.Pop())
-print(f"Is the Stack Empty? ", test_stack.IsEmpty())
-print(f"Current size of Stack: ", test_stack.get_size())
+# # Testing the Stack functions
+# test_stack = Stack(5)
+# print(test_stack.is_empty())
+# print(f"Current size of Stack: ", test_stack.get_size())
+# test_stack.push(1)
+# test_stack.push(2)
+# test_stack.push(3)
+# test_stack.push(4)
+# print(f"Is the Stack full? ", test_stack.is_full())
+# test_stack.push(5)
+# test_stack.push(6)
+# print(f"Current size of Stack: ", test_stack.get_size())
+# print(f"Is the Stack Empty? ", test_stack.is_empty())
+# print(f"Is the Stack full? ", test_stack.is_full())
+# print("Take a PEEK at the top of the stack:", test_stack.peek())
+# print("Popped item: ", test_stack.pop())
+# print("Take a PEEK at the top of the stack:", test_stack.peek())
+# print("Popped item: ", test_stack.pop())
+# print("Take a PEEK at the top of the stack:", test_stack.peek())
+# print("Popped item: ", test_stack.pop())
+# print(f"Is the Stack Empty? ", test_stack.is_empty())
+# print(f"Current size of Stack: ", test_stack.get_size())
