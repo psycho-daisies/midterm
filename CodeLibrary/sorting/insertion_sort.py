@@ -16,8 +16,8 @@ def insertion_sort(arr):
         arr[j + 1] = temp  # places element into sorted position
     return arr
 
-
-a = [3, 5, 1, 8, 6, 4, 2, 7]
-b = a.copy()
-print("Unsorted: ", b)
-print("Sorted:   ", insertion_sort(a))
+# Testing insertion sort
+# a = [3, 5, 1, 8, 6, 4, 2, 7]
+# b = a.copy()
+# print("Unsorted: ", b)
+# print("Sorted:   ", insertion_sort(a))
