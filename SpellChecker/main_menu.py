@@ -2,6 +2,8 @@
 Dictionary Program for Midterm
 By: Troy Brunette
 
+The user can type a word and find out if it's in the stored list of words.
+If the word is not in the table, some suggested words are printed.
 Uses Levenshtein Distance Algorithm to suggest word corrections
 For implementing The Levenshtein Distance:
 - I followed along with this website to implement the algorithm
@@ -10,19 +12,24 @@ For implementing The Levenshtein Distance:
     - '1000 Most Common US English words:'
     - https://gist.github.com/deekayen/4148741
 
+Contains functions for:
+    - reading from a text file
+    - create hash table and add words from a text file
+    - check the table for a user specified word
+    - add words to a list of words
 """
 from hash_table import HashTable
 from levenshtein import calc_distance, read_file
 from read_file import get_menu_border
 
+
 # Main part of program
 def main():
     hash_table, words_list = get_words_from_file()
-    user_word_list = []
     display_menu()
 
     while True:
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-4): ")
 
         if choice == '1':
             print("Importing from file...")
@@ -42,16 +49,10 @@ def main():
                 print(f"{word} is not in the Dictionary. Did you mean to type? {closest} ")
 
         elif choice == '4':
-            if len(user_word_list) > 0:
-                print(user_word_list)
-            else:
-                print("Add your words first")
-
-        elif choice == '5':
             print("Program Exit")
             break
         else:
-            print(f"Invalid choice. Please Enter Choice: (1-5): ")
+            print(f"Invalid choice. Please Enter Choice: (1-4): ")
 
 
 # Reads from a text file that contains the Menu
@@ -84,6 +85,7 @@ def add_user_word(hash_table):
 
     # print("The words you entered:", word_list)
     return word_list, hash_table
+
 
 # Reads from a text file and adds the words to a HashTable
 def get_words_from_file():
