@@ -20,7 +20,7 @@ def selection_sort(arr):
 
 
 
-a = [3, 5, 1, 8, 6, 4, 2, 7]
-b = a.copy()
-print("Unsorted: ", b)
-print("Sorted:   ", selection_sort(a))
+# a = [3, 5, 1, 8, 6, 4, 2, 7]
+# b = a.copy()
+# print("Unsorted: ", b)
+# print("Sorted:   ", selection_sort(a))
