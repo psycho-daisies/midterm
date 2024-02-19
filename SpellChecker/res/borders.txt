@@ -13,8 +13,7 @@
       |    1. Import words from a file              |.
       |    2. Add a word to the list                |.
       |    3. Check if a word is in the list        |.
-      |    4. Display the current list              |.
-      |    5. Quit                                  |.
+      |    4. Quit                                  |.
       |                                             |.
       |                                             |.
       |   __________________________________________|_______
