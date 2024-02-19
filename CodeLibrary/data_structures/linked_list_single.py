@@ -1,8 +1,7 @@
 """
-Midterm Library: Singly Linked List
+Singly Linked List
 Troy Brunette
 CS240
-
 
 Single Linked List
      Head
@@ -127,7 +126,7 @@ class LinkedList:
             return
         current = self.head
         for i in range(index):
-            if current is None or index >= size:
+            if current is None or index >= self.size:
                 print(f"{index} not a valid Index!")
                 return
             else:
@@ -165,26 +164,26 @@ class LinkedList:
             current = current.next
 
 
-# Testing out the list and different functions
-linked_list = LinkedList()
-linked_list.add(4)
-linked_list.add(6)
-linked_list.add(2)
-linked_list.add_to_front(11)
-linked_list.add(3)
-
-linked_list.insert(5, 4)
-linked_list.display()
-size = linked_list.count_nodes()
-print(f"Linked List has {size} elements.")
-
-linked_list.delete(1)
-
-
-index = 3
-
-print(f"[Index: {index}, Data: {linked_list.read(index)}]")
-linked_list.linear_search(11)
-linked_list.selection_sort()
-linked_list.linear_search(11)
-linked_list.display()
+# # Testing out the list and different functions
+# linked_list = LinkedList()
+# linked_list.add(4)
+# linked_list.add(6)
+# linked_list.add(2)
+# linked_list.add_to_front(11)
+# linked_list.add(3)
+#
+# linked_list.insert(5, 4)
+# linked_list.display()
+# size = linked_list.count_nodes()
+# print(f"Linked List has {size} elements.")
+#
+# linked_list.delete(1)
+#
+#
+# index = 3
+#
+# print(f"[Index: {index}, Data: {linked_list.read(index)}]")
+# linked_list.linear_search(11)
+# linked_list.selection_sort()
+# linked_list.linear_search(11)
+# linked_list.display()
