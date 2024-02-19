@@ -37,5 +37,5 @@ def partition(arr, l, r):
 
 
 # Testing Quicksort on a small array
-numbers = [2, 9, 6, 3, 7, 5, 8, 4, 1]
-print(quicksort(numbers, 0, len(numbers) - 1))
+# numbers = [2, 9, 6, 3, 7, 5, 8, 4, 1]
+# print(quicksort(numbers, 0, len(numbers) - 1))
