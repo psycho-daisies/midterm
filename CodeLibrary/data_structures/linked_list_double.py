@@ -1,8 +1,7 @@
 """
-Midterm Library: Doubly Linked List
+Doubly Linked List
 Troy Brunette
 CS240
-
 
 Double Linked List
      Head
@@ -181,21 +180,21 @@ class DoublyLinkedList:
 # doubly_linked_list.add(5)
 # doubly_linked_list.add(6)
 # doubly_linked_list.add_to_front(1)
-
+#
 # doubly_linked_list.insert(8, 6)
 # doubly_linked_list.add_to_front(7)
-
+#
 # print(doubly_linked_list.get_size())
 # print(doubly_linked_list.count_nodes())
-
+#
 # doubly_linked_list.display()
 # doubly_linked_list.linear_search(4)
-
+#
 # doubly_linked_list.selection_sort()
-
+#
 # doubly_linked_list.display()
 # doubly_linked_list.linear_search(5)
-
+#
 # doubly_linked_list.delete(6)
 # doubly_linked_list.display()
 # index = 3
