@@ -4,11 +4,6 @@ from read_file import read_file
 """
 Dictionary Program for Midterm
 By: Troy Brunette
-Contains functions for:
-    - reading from a text file
-    - create hash table and add words from a text file
-    - check the table for a user specified word
-    - add words to a list of words
 
 The Levenshtein distance is used for correcting typos and completing words
 * Create 2D Matrix: The Distance Matrix
