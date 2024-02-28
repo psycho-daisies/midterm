@@ -5,14 +5,14 @@ CS240
 Heap Structure:
 - implemented with an array
 - Allows efficient storage and retrieval of elements
-- Great for access to the minimum or maximum element
+- Great for accessing the minimum or maximum element
 - can be used in a Priority Queue implementation
 
 Heap Operations:
 - maintain the heap property, keeping the tree structure balanced
-- Insertion (push): add a new element to the heap
-- Deletion (pop): removing and returning the min or max element
-- Peek (or top): retrieving the min or max element without removing it
+- Push: add a new element to the heap
+- Pop: removing and returning the min or max element
+- Peek: retrieving the min or max element without removing it
 
 Efficiency:
 - useful for problems that require quickly finding and removing the minimum or maximum element.
@@ -20,8 +20,7 @@ Efficiency:
 
 Searching:
 - Heaps are not designed for efficient searching like the binary search tree
-- Linear search for finding a specific element
-- Heaps are usually implemented as array
+- Uses a Linear search for finding a specific element
 - Time Complexity: O(n), n is the size of the heap
 """
 
