@@ -92,8 +92,8 @@ class MinHeap:
 
     def search(self, value):
         """Search Heap for a target value using a Linear Search"""
-        for i in self.heap:
-            if i == value:
+        for element in self.heap:
+            if element == value:
                 return True
             return False
 
@@ -168,8 +168,8 @@ class MaxHeap:
 
     def search(self, value):
         """Search Heap for a target value using a Linear Search"""
-        for i in self.heap:
-            if i == value:
+        for element in self.heap:
+            if element == value:
                 return True
             return False
 
@@ -190,6 +190,3 @@ for i in range(len(nums)):
 
 print(f"Minimum in the Heap: {heap_min.peek()}")
 print(f"Maximum in the Heap: {heap_max.peek()}")
-
-
-
